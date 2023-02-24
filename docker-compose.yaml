@@ -1,0 +1,8 @@
+services:
+  app-nifi:
+    image: apache/nifi:latest
+    container_name: nifi
+    ports:
+      - "8443:8443"
+    volumes:
+      - /tmp/store:/mnt/nifi/store
